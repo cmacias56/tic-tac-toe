@@ -12,6 +12,8 @@ const App = () => {
   const handleGamePlay = (squareIndex) => {
     let updateBoard = [...squares]
 
+
+    // funtion is created that will allow players to switch turns upon clicks, board updates with symbols place in each section
     if (player % 2 === 0 && updateBoard[squareIndex] !== "❌" && updateBoard[squareIndex] !== "⭕️") {
       updateBoard[squareIndex] = "⭕️"
       setSquares(updateBoard)
